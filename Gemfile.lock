@@ -1,0 +1,15 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    ffi (1.11.1)
+    ffi-wiring_pi (0.6.0)
+      ffi (~> 1.0)
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  ffi-wiring_pi!
+
+BUNDLED WITH
+   1.17.2

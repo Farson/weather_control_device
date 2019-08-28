@@ -1,6 +1,7 @@
 #ruby
 require "yaml"
 require './thermometer'
+require './heater'
 
 conf = YAML.load_file("./config.rb")
 
@@ -8,6 +9,7 @@ sensor_1 = Thermometer.new(conf[:sensor_1])
 sensor_2 = Thermometer.new(conf[:sensor_2])
 sensor_3 = Thermometer.new(conf[:sensor_3])
 
+heater_1 = Heater.new(conf[:heater_1])
 
 
 def current_time
@@ -19,9 +21,12 @@ def print_log(sensor)
 end
 
 while true
-  puts "--- #{current_time} ---" 
+  puts "--- #{current_time} ---"
+
+  heater_1.adjust_temp(sensor_1.read)
   puts "1: #{sensor_1.read}°C"
+
   puts "2: #{sensor_2.read}°C"
   puts "3: #{sensor_3.read}°C"
-  
+
 end
