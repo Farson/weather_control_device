@@ -1,7 +1,7 @@
 #ruby
 require "yaml"
-require './thermometer'
-require './heater'
+require './lib/thermometer'
+require './lib/heater'
 
 conf = YAML.load_file("./config.rb")
 
