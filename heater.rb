@@ -20,10 +20,10 @@ class Heater
   end
 
   def up
-    pin.up!
+    @pin.up!
   end
 
   def down
-    pin.down!
+    @pin.down!
   end
 end
