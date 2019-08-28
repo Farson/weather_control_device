@@ -1,6 +1,8 @@
 # weather_control_device
 Control and manipulate environmental conditions in an formicarium or terrarium
 
+![weather_control_device](weather_control_device.png)
+
 # Hardware
 + Raspberry pi
 + 1-Wire temperature sensor DS18B20
