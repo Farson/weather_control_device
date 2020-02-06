@@ -1,7 +1,13 @@
 ---
-:sensor_1: "28-011317ad3a26"
-:sensor_2: "28-01131621351d"
-:sensor_3: "28-01131797f1e3"
+:sensor_1:
+  :name: sensor_1
+  :address: "28-011317ad3a26"
+:sensor_2:
+  :name: sensor_2
+  :address: "28-01131621351d"
+:sensor_3:
+  :name: sensor_3
+  :address: "28-01131797f1e3"
 :heater_1:
   :pin: 0
   :target_temp: 28

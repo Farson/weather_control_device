@@ -17,16 +17,18 @@ def current_time
 end
 
 def print_log(sensor)
-  puts "#{current_time} - #{sensor.read}°C"
+  puts "#{current_time} - #{sensor.name} - #{sensor.cached_temperature}°C"
 end
 
 while true
-  puts "--- #{current_time} ---"
+  sensor_1.read
+  sensor_2.read
+  sensor_3.read
 
-  heater_1.adjust_temp(sensor_1.read)
-  puts "1: #{sensor_1.read}°C"
+  heater_1.adjust_temp(sensor_1.cached_temperature)
 
-  puts "2: #{sensor_2.read}°C"
-  puts "3: #{sensor_3.read}°C"
+  print_log(sensor_1)
+  print_log(sensor_2)
+  print_log(sensor_3)
 
 end
