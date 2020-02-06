@@ -41,5 +41,5 @@ use pin 1 (BCM 18) (physical pin 12)
 
 ## Run
 ```
-ruby ant.rb
+ruby weather_control.rb
 ```
